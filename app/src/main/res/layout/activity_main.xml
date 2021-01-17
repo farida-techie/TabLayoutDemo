@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sendlo"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLa"
+        android:layout_margin="10dp"
+        app:elevation="10dp"
+        android:background="@drawable/background_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/myPagerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/pToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="#ffffff"
+            android:textSize="50sp"
+            app:titleTextAppearance="@color/teal_700"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:elevation="4dp" tools:targetApi="lollipop"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleText"
+                style="@style/Toolbar.TitleText"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabMaxWidth="0dp"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            app:tabTextAppearance="@style/customTabStyle"
+            app:tabGravity="fill"
+            app:tabTextColor="#031370"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="@color/white"
+            app:tabIndicatorColor="@color/purple_500"
+
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/myPagerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLa"
+
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+</androidx.constraintlayout.widget.ConstraintLayout>

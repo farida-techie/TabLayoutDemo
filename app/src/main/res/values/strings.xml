@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TabLayoutDemo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">This is Home Fragment</string>
+    <string name="notification">This is Notification Fragment</string>
+    <string name="search">This is Search Fragment</string>
+</resources>
